@@ -54,3 +54,10 @@ else:
     print("diagnosis: Benign(no cancer)")
 
 
+#CONFUSION MATRIX
+''' It says about how many predictions were right or wrong by comparing hte actual 
+and predicted values'''
+''' TP-Model predicted positive and actual was also positive prediction
+    TN-Modelpredicted and actual was also negative
+    FP-Model predicted positive and actual was negative (type 1 error)
+    FN-Model predictedd negative and actual was positive (type 2 error)'''
