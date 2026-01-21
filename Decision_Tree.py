@@ -46,8 +46,8 @@ y= data.target
 import pandas as pd
 df=pd.DataFrame(data.data,columns=data.feature_names)
 df["target"] = y
-#print(df)
-#print(df.describe())
+print(df)
+print(df.describe())
 #Feature Engineering
 x=data.data
 y=data.target
