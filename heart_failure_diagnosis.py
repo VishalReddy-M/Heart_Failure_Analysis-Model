@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.metrics import accuracy_score, confusion_matrix,recall_score
 from sklearn.preprocessing import StandardScaler
 import warnings
 warnings.filterwarnings("ignore")
@@ -49,8 +49,10 @@ model.fit(x_train,y_train)
 y_pred = model.predict(x_test)
 acc = accuracy_score(y_test,y_pred)
 con = confusion_matrix(y_test,y_pred)
+recall = recall_score(y_test,y_pred)
 print(acc)
 print(con)
+print(recall)
 new_data = np.array([[65,2,140,90,3,3,1,1]])
 predict = model.predict(new_data)
 print(predict)
